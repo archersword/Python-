@@ -46,11 +46,14 @@ print(x)
 # 否则会出现无法运行的情况
 
 import random # 引入随机数
-a=int(input("请我方出拳"))
-if a!=0 and a!=1 and a!=2:
+a=int(input("请我方出拳，请输入0、1或2"))
+
+for i in range(100): #使用了一个循环语法，万一多次输入错误，可以重复输入
+    if a!=0 and a!=1 and a!=2:
         a=int(input("我方输入错误，请输入0、1或是2："))
-else:
-    print("")
+    else:
+        print("")
+        break
 
 b=random.randint(0,2)
 print("对方出拳为%d"%b)

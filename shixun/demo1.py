@@ -25,9 +25,24 @@ keyword.kwlist
 
 #格式化输出
 age=18
+
 #占位操作
 print("我的年级是：%d 岁" %age)
-#d 整数 %s 字符串
+age=age+1
+print("nianji shi %d sui"%age)
+age=age+1
+print("nianjj shi %d sui"%age)
+#格式化输出，将变量格式化输出，为了的是让变量能够变化的同时输出
+#让%d占据输出的一部分，然后在把输出的变量引入后面
+
+#如何输出字符串？
+#先给一个变量命名，然后再输出变量，或是直接输出字符串
+name="xiaozhang" #注意字符串需要用双引号括住，不需要给变量定义格式，直接赋值即可
+print("name is %s" %name)
+print("name is %s"%("xiaozhang"))
+#%d 整数 %s 字符串
+
+#def if else and  guanjianzi
 
 #-------以下两个为重点内容
 age=18
@@ -36,8 +51,8 @@ print("我的名字是%s,我的国籍是%s"%("小张","中国"))
 print("我的年纪是：%d岁"%age)
 #----------
 
-#补充部分
-print("aaa","bbb","ccc")
+#补充部分print("aaa","bbb","ccc")f
+
 print("www","baidu","com",sep=".")
 #后期的点将前面的字符分隔开来
 print("hello",end="")
